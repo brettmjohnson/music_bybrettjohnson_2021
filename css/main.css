@@ -127,7 +127,7 @@ a:hover, a:focus, a:active {
 .album {
   display: grid;
   grid-gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   width: 100%;
   color: #fff;
   background-color: #11111199;
@@ -139,14 +139,17 @@ a:hover, a:focus, a:active {
   box-shadow: 0 0 2rem var(--album-color);
 }
 
+.main-header {
+  width: 100%;
+  text-align: center;
+}
+
 .main-header h1 {
   font-weight: normal;
 }
 
 .art {
   width: 100%;
-  box-sizing: border-box;
-  /* border: 1px solid #ffffff22; */
 }
 
 .description {
@@ -243,7 +246,7 @@ a:hover, a:focus, a:active {
 
 .thousand-threads {
   /* fallback absolute url required for Safari bug */
-  --album-background: url('../img/thousand-threads-soundtrack.jpg'), url('https://music.bybrettjohnson.com/img/thousand-threads-soundtrack.jpg');
+  --album-background: url('../img/thousand-threads-soundtrack.jpg');
   --album-color: #4F8C94;
 }
 
@@ -336,8 +339,12 @@ a:hover, a:focus, a:active {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 660px) {
+@media only screen and (max-width: 660px) {
     
+  body {
+    padding: 1rem;
+  }
+
 }
 
 @media print,
