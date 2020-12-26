@@ -151,7 +151,8 @@ a:hover, a:focus, a:active {
 .album:before {
   content: "";
   display: block;
-  background: var(--album-background);
+  background-image: var(--album-background);
+  background-color: var(--dark-gray); /* fallback */
   background-size: cover;
   background-position: center;
   position: absolute;
